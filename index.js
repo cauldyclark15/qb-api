@@ -4,11 +4,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use(express.static(path.join(__dirname, 'www')));
 
 app.get('/initialize', function(req, res) {
   res.json({ message: 'initialize' });
