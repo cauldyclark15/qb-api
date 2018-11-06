@@ -1,0 +1,23 @@
+{
+  "name": "qb-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cauldyclark15/qb-api.git",
+  "author": "cauldyclark15 <jcing.jc@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "intuit-oauth": "^1.0.2",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.9",
+    "node-fetch": "^2.2.1"
+  }
+}
